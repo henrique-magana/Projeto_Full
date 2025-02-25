@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .conteudo1{
+            border: 1px solid orangered;
+            background: blueviolet;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 1; /*colocando na frente*/
+        }
+
+        .conteudo2{
+            border: 1px solid orangered;
+            background: green;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            z-index: 0;/*colocando pra baixo*/
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo1">
+        Conteudo 1
+    </div>
+
+    <div class="conteudo2">
+        Conteudo2
+    </div>
+</body>
+</html>

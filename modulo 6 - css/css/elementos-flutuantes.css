@@ -1,0 +1,30 @@
+.conteudo1{
+    background-color: red;
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    float:left; /* o Float deixa ele flutuando e pode colocar onde quiser, ele sobrepoem os outros*/
+}
+
+.principal{
+    border: 1px solid red;
+
+
+}
+
+.conteudo{
+    background-color: blue;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    text-align: center;
+
+}
+
+.clear{
+    clear: both; /* isso que faz o com que os conteudo flutuantes fiquem dentro da div*/
+}
+
+
