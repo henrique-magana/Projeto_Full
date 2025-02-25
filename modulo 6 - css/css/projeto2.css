@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(255, 217, 0);
+
+}
+
+
+
+.logo{
+padding: 10px 0 0 0;
+}
+
+.logo img{
+    height: 45px;
+    width: 200px;
+}
+
+.menu{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a{
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #fff;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.menu a:hover{
+    color: gray;
+    background-color: #fff;
+}
+
+/*Fim Header e inicio corpo do site*/
+
+body{
+    background-color: #c4c0c0;
+
+    
+}
+
+main{
+    margin: 10px 0 0 0;
+}
+
+.container{
+    padding: 0 150px;
+    display: flex;
+}
+
+.postagem__principal{
+    width: 700px;
+    display: inline;
+    justify-content: left;
+    padding: 15px;
+    background-color: #fff;
+    margin: 0 20px 0 0;
+
+}
+
+.postagem__principal__titulo{   
+    height: 30px;
+    margin: 10px 0 0 0;
+}
+
+.postagem__principal__subtitulo{
+    height: 30px;
+    margin: 10px 0 0 0;
+}
+
+.postagem__principal__imagem{
+    width: 600px;
+    height: 400px;
+    margin: 0 0 10px 0;
+
+}
+
+/*Postagem lateral inicio*/
+
+.postagem__lateral{
+    
+    width: 250px;
+    background-color: #fff;
+}
+
+.postagem__lateral__principal{
+    
+}
+
+.postagem__lateral__principal h1{
+    font-size: 20px;
+    padding: 5px;
+    background-color: #c4c0c0;
+    margin: 10px 5px 0 ;
+}
+
+.postagem__lateral__principal p{
+    font-size: 14px;
+    padding: 5px;
+
+}
+
+.postagem__lateral__principal a{
+    font-size: 15px;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(204, 204, 0);
+}
+
+.postagem__lateral__menu{
+    display: inline-block;
+}
+
+.postagem__lateral__menu h1{
+    font-size: 20px;
+    padding: 5px;
+    background-color: #c4c0c0;
+    margin: 20px 5px 0 ;
+}
+
+.menu__lateral{
+    display: grid;
+    grid-template-columns: repeat(1, 1);
+    grid-template-rows: auto;
+}
+
+.postagem__lateral__menu a{
+    text-decoration: none;
+    color: rgb(204, 204, 0);
+    padding: 3px;
+    margin: 0 0 0 5px;
+
+}
+
+/*Inicio rodape*/
+
+.rodape{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
