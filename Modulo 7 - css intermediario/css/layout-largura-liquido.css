@@ -1,0 +1,65 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto; /*Aqui ele centraliza o site*/
+    background: #fff;
+    min-width: 720px; /*o  minimo quando dimimui*/
+}
+
+.marca{
+    height: 100px;
+    background: #9e9e9e;
+    text-align: center;
+    line-height: 100px;
+}
+
+.conteudo{
+    width: 75%;
+    float: right;
+
+}
+
+.conteudo_principal{
+    width: 64%;
+    float: left;
+    border: 1px solid red;
+}
+
+.conteudo_secundario{
+    width: 34%;
+    float: right;
+    background: #d1d1d1;
+    border: 1px solid red;
+}
+
+.conteudo_secundario h1, .conteudo_secundario h2, .conteudo_secundario h3, .conteudo_secundario p{
+    padding: 0 20px;
+}
+
+.navegacao{
+
+    width: 23%;
+    float: left;
+    padding: 20px 0 ;
+    background: #d1d1d1;
+
+}
+
+.rodape{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+
+.navegacao ul{
+    list-style: none;
+}
+
+.navegacao ul li a {
+    text-decoration: none;
+}
+
