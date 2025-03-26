@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <script>
+
+
+        let numero = prompt("Digite um numero")
+
+        function contadorDePares(numero){
+            if(numero % 2 == 0 && numero >=1){
+                console.log(numero)
+                numero--
+                contadorDePares(numero)
+            }else if( numero % 2 != 0 && numero >=1){
+                numero--
+                contadorDePares(numero)
+            }
+        }
+
+
+
+
+        contadorDePares(numero)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

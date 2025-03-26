@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //funcoes que sao parametros para outra funcoes
+
+
+        
+
+        function exibirArtigo(id, callbackSucesso, callbackErro){
+            if(false){
+                callbackSucesso('funcoes de callback em JS', 'funcoes de callback sao muito utilizadas')
+            } else{
+                callbackErro('Erro ao recuperar os dados')
+            }
+        }
+
+
+        var callbackSucesso = function (titulo, descricao){
+            document.write('<h1>' + titulo + '</h1>')
+            document.write("<br>")
+            document.write('<p>' + descricao + '</p>')
+        }
+
+        var callbackErro = function(erro, descricao){
+            document.write('<p>' + erro + '</p>')
+        }
+
+        exibirArtigo(1,callbackSucesso, callbackErro) // nao colocamos () pois quando colocamos indicamos que estamos iniciando a funcao, no nosso caso estamos chamando o que ela faz e nao iniciando ela
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

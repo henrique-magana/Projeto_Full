@@ -1,0 +1,14 @@
+.conteudo{
+    background-color: #dcdcdc;
+    height: 400px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.item{
+    border: 1px solid red;
+    background-color: #fff;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}

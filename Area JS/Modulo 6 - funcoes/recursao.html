@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+
+        function recursao(n){
+            if(n - 1 < 2){
+                console.log("Recursao parou ")
+            }else if( n % 2 !=0){
+                console.log("Recursao numero impar")
+                recursao(n-1)
+            }else{
+                recursao(n -2)
+                console.log("Recursao numero par")
+            }
+        }
+
+
+        recursao(11)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
