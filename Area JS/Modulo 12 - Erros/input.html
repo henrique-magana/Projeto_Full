@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //erros de entrada de dados quando os usuarios escrevem errado
+
+        function checaNum(num){
+            let number = Number(num) // mesmo se for String ele converte pra numero
+
+            if(Number.isNaN(number)){
+                console.log("Favor passar so numeros para o programa")
+            }else{
+                return number
+            }
+        }
+
+        checaNum(5)
+        checaNum("56")
+        checaNum("fefef")
+        checaNum("fefef")
+        checaNum("fefef")
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+
+    <button onclick="abrirPopUp()">Abrir Janela</button>
+    <button onclick="fecharPopUp()">Fechar Janela</button>
+
+
+
+
+
+    <script>
+
+        var janela
+
+        function abrirPopUp(){
+            janela =  window.open('','Nova_Janela','width=200,height=100')
+        }
+
+        function fecharPopUp(){
+            window.close(janela)
+        }
+
+
+    </script>
+</body>
+</html>

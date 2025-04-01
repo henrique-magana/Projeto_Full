@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <input type="text" id="campo_texto"> <button onclick="adicionar()" id="adicionar">Adicionar</button> <button onclick="ordenar()" id="ordernar">Ordenar</button>
+
+    <script>
+
+        let objetos = ["Cadeira","Impressora","Garfo"]
+
+
+
+        function adicionar(){
+
+            let add = document.getElementById('campo_texto').value
+
+
+            if(add === ""){
+                console.log("Esta vazio")
+            }else if(objetos.includes(add)){
+                console.log("ja existe")
+            }else{
+            objetos.push(add)
+
+            console.log(objetos)
+
+            document.getElementById('campo_texto').value = ""
+            }
+
+
+
+
+        }
+
+        function ordenar(){
+            objetos.sort()
+
+            console.log(objetos)
+        }
+    </script>
+</body>
+</html>

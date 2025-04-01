@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+
+        let pessoa = {
+            "nome": "Henrique",
+            "idade": 28,
+            "modelo": "BMW"
+        }
+
+        let transformaString = JSON.stringify(pessoa) // aqui transforma o JSON em um String
+
+        console.log(transformaString)
+
+        let transformaString2 = JSON.parse(transformaString)// Aqui transforma o String em um JSON, tem que ter a mesma base para funcionar
+
+        console.log(transformaString2)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

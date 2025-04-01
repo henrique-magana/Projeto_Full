@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //onkeyup - acionado apos a finalizacao do evento de inclusao do caractere
+
+        function distribuiCaracter(){
+            // aqui com o comando na linha do html, estamos vendo qual esta sendo digitado
+            var caractere = document.getElementById('entrada').value
+            // aqui estamos limpando o campo
+            document.getElementById('entrada').value=""
+
+
+            caractere.trim()
+
+            switch(caractere){
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                //adicionando o caractere no campo de numeros
+                document.getElementById('apenas_numeros').value += caractere
+                break
+                default:
+                //adiciona no campo numero
+                document.getElementById('apenas_letras').value += caractere
+
+    
+            }
+        }
+
+
+
+
+    
+
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+    <input type="text" 
+    placeholder="Digite um caracter aqui" 
+    onkeyup="distribuiCaracter()"
+    id="entrada"
+    >
+
+    <hr>
+    <span>Letras: </span>
+    <input type="text" disabled id="apenas_letras">
+    <span>Numeros</span>
+    <input type="text" disabled id="apenas_numeros">
+
+
+
+
+    
+</body>
+</html>

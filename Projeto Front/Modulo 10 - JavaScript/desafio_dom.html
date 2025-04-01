@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="text" id="campo" onfocus="mudaInputAmarelo()" onblur="mudaInputSemCor()">
+
+    <script>
+
+    function mudaInputAmarelo(){
+        document.getElementById('campo').style.background = "yellow"
+
+        
+    }
+
+    function mudaInputSemCor(){
+        document.getElementById('campo').style.background = ""  
+
+
+        var n1 = document.getElementById('campo').value
+        if(n1.length <=3 ){
+        document.getElementById('campo').style.background = "red"
+        }else{
+                    document.getElementById('campo').style.background = "green"
+        }
+    }
+
+    </script>
+    
+</body>
+</html>
