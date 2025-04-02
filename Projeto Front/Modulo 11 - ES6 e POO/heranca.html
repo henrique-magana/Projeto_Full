@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // Heranca = reutilizar atributos e metodos iguais em objetos
+
+        class Animal{
+            constructor(){
+                this.cor = ''
+                this.tamanho = null
+                this.peso =peso
+            }
+
+            dormir(){
+                console.log('dormir')
+            }
+        }
+
+
+        class Cachorro extends Animal{
+            constructor(){
+                super()
+                this.orelhas = 'Grandes e caidas'
+            }
+
+            correr(){
+                console.log('Correr')
+            }
+
+
+            rosnar(){
+                console.log('rosnar')
+            }
+        }
+
+        class Passaro extends Animal{
+            constructor(){
+                super()
+                this.bico = 'curto'
+            }
+            voar(){
+                console.log('Voar')
+            }
+
+
+        }
+
+        class Papagaio extends Passaro{
+            constructor(){
+                super()
+                this.sabeFalar = true
+            }
+
+            falar(){
+                console.log('falar')
+            }
+        }
+
+
+        let cachorro = new Cachorro()
+        let passaro = new Passaro()
+        let papagaio = new Papagaio()
+
+        console.log(papagaio)
+
+
+
+
+
+
+    </script>
+</body>
+</html>

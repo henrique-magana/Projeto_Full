@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+        //Polimorfismo - reutilizar e sobrescrever
+        // nem sempre o Objeto filho vai ser 100% como o Pai
+        // dai temos a sobre escrita
+        // reescrevemos o metodo do pai no filho, mas fazendo a funcao que o filho precisa
+
+
+        class Animal{
+            constructor(cor,tamanho,peso){
+                this.cor = cor
+                this.tamanho = tamanho
+                this.peso = peso
+            }
+
+            dormir(){
+                console.log('dormir')
+            }
+        }
+
+
+        
+        class Passaro extends Animal{
+            constructor(bico, cor, tamanho, peso){
+                super(cor, tamanho, peso)
+                this.bico = bico
+            }
+            voar(){
+                console.log('Voar')
+            }
+
+
+        }
+
+        class Papagaio extends Passaro{
+            constructor(sabeFalar, cor, tamanho, peso){
+                super('Medio',cor, tamanho, peso)
+                this.sabeFalar = sabeFalar
+            }
+
+            falar(){
+                console.log('falar')
+            }
+        }
+
+
+        class Avestruz extends Passaro{
+            constructor(bico,cor, tamanho, peso) {
+                super(bico,cor,tamanho,peso)
+            }
+
+            enterrarCabeca(){
+                console.log("Enterrar a cabeca")
+            }
+
+            voar(){
+                console.log('Nao sabe voar')
+            }
+        }
+
+        let papagaio = new Papagaio(true, 'Verde', 25, 350)
+
+        let avestruz = new Avestruz('Medio','branco',250,900)
+
+        console.log(avestruz)
+
+        papagaio.voar()
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //Marcenaria
+        //Cadeira e Sofa
+
+        // estilo objetos
+
+        class Cadeira{
+            constructor(qtdPernas,giratoria,cor){
+                this.qtdPernas = qtdPernas
+                this.giratoria = giratoria
+                this.cor = cor
+            }
+
+
+            girarCadeira(){
+                if(this.giratoria){
+                    console.log("girou")
+                }else{
+                    console.log("Cadeira nao giratoria")
+                }
+            }
+        }
+
+        let cadeira = new Cadeira(4,false,'azul')
+        let cadeira2 = new Cadeira(1,true,'vermelha')
+
+        let cadeiras = []
+        cadeiras.push(cadeira)
+        cadeiras.push(cadeira2)
+
+        console.log(cadeiras)
+
+
+
+
+        class Sofa{
+            constructor(tamanho_cm,cor,pernas,estofado){
+                this.tamanho_cm = tamanho_cm
+                this.cor = cor
+                this.pernas = pernas
+                this.estofado = estofado
+            }
+
+            levantarParteDoPe(){
+                if(this.estofado){
+                    console.log("Levanta sim")
+                }else{
+                    console.log("Nao levanta")
+                }
+            }
+        }
+
+        let sofa1 = new Sofa(200,'branco',6,true)
+        let sofa2 = new Sofa(150,'azul',4,false)
+
+        let sofas = []
+        sofas.push(sofa1)
+        sofas.push(sofa2)
+
+        console.log(sofas)
+    </script>
+</body>
+</html>

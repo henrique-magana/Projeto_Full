@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Abstracao = coisas do mundo real para dentro do sistema Entidade, Identidade, Caracteriscas e Acoes
+        // criar um modelo dentro do codigo que represente essa entidade
+        //Entidade - Carro
+        // Identidade - x= new Carro
+        // Caracteristicas - marca,modelo,qtdPortas,cor
+        // Acoes - ligar, acelerar, freiar, desligar
+
+
+        class ContaBancaria {
+            //agencia
+            //numeroConta
+            //saldo
+            //limite
+
+            constructor(){
+                this.agencia = 1075
+                this.numeroConta = 19307
+                this.saldo = 50
+                this.limite = 450
+            }
+
+            depositar(valorDeposito){
+                this.saldo += valorDeposito
+            }
+
+            sacar(valorSaque){
+                this.saldo -= valorSaque
+            }
+
+            consultarSaldo(){
+                return this.saldo
+            }
+        }
+
+        let x = new ContaBancaria()
+        let y = new ContaBancaria()
+
+        x.depositar(400)
+        console.log(x.consultarSaldo())
+        x.sacar(200)
+        console.log(x.consultarSaldo())
+
+
+    </script>
+</body>
+</html>
