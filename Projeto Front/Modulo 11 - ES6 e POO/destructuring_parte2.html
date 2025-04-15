@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // Objetos agora 
+
+        let produto ={
+            descricao: 'Notebook',
+            preco: 1800,
+            detalhes: {
+                fabricante:'abc',
+                modelo: 'xyz'
+            }
+        }
+
+
+        //se for array usamoa []
+        // se for objetos {}
+
+
+        //aqui mudamos o nome para chamar no console com ":"
+        // podemos pre definir um valor colocando assim {teste =6}
+        let {descricao:desc, preco:pre} = produto
+
+        //aqui acessando o objeto dentro do objeto
+        let{detalhes: {fabricante,modelo}} = produto
+
+        console.log(desc, pre)
+        console.log(fabricante,modelo)
+
+    </script>
+</body>
+</html>

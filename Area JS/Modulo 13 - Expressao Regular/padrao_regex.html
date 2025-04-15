@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        //Regex = definimos um padrao em regex e utilizamos um metodos para verificar se tem ou nao
+        // volta true or false
+
+
+        //metodo 1
+        const reg1 = new RegExp('bola')
+
+        console.log(reg1.test('tem bola? '))
+        console.log(reg1.test('nao tem'))
+
+        //metodo 2
+        const reg2 = /bola/
+
+        console.log(reg2.test('tem bola? '))
+        console.log(reg2.test('nao tem'))
+        
+        //metodo 3
+
+        let texto = 'tem bola na cesta'
+        console.log(reg2.test(texto))
+
+        //metodo 4
+
+        console.log(/quadrado/.test(" onde tem quadrado"))
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+
+        class Endereco{
+            constructor(rua = "Reboujo 250", bairro="Tatuape",cidade="SP",estado="SP"){
+                this.rua = rua
+                this.bairro = bairro
+                this.cidade = cidade
+                this.estado = estado
+            }
+
+
+            atualizaRua(rua){
+                this.rua = rua
+            }
+            
+        }
+
+
+        let enderecoCliente = new Endereco()
+
+        enderecoCliente.rua = "Bora bora 170B"
+        console.log(enderecoCliente)
+
+
+
+    </script>
+</body>
+</html>

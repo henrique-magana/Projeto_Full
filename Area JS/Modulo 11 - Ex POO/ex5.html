@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+
+
+
+        class ContaBancaria{
+
+            constructor(saldo_cc,saldo_cp,juros_poupanca){
+                this.saldo_cc = saldo_cc
+                this.saldo_cp = saldo_cp
+                this.juros_poupanca = juros_poupanca
+            }
+
+            depositoCC(valor){
+                this.saldo_cc += valor
+                console.log(`Saldo da CC ${this.saldo_cc}`)
+            }
+
+            depositoCP(valor){
+                this.saldo_cp += valor
+                console.log(`Saldo da CP ${this.saldo_cp}`)
+            }
+
+            saqueCC(valor){
+                this.saldo_cc -= valor
+                console.log(`Saldo da CC ${this.saldo_cc}`)
+            }
+
+            saqueCP(valor){
+                this.saldo_cp -= valor
+                console.log(`Saldo da CP ${this.saldo_cp}`)
+            }
+
+            transferencia(valor){
+                let res = this.saldo_cc -= valor 
+                this.saldo_cp += res
+                console.log(`Saldo da CC ${this.saldo_cc}`)
+                console.log(`Saldo da CP ${this.saldo_cp}`)
+            }
+        }
+
+
+        class ContaEspecial extends ContaBancaria{
+            constructor(saldo_cc,saldo_cp,juros_poupanca){
+                super(saldo_cc,saldo_cp,juros_poupanca)
+                this.juros_poupanca = this.juros_poupanca * 2
+            }
+
+        }
+
+
+        let contaPai = new ContaBancaria(100,200,3.5)
+
+        let contaFilho = new ContaEspecial(300,400,3.5)
+
+
+        console.log(contaPai)
+        contaPai.depositoCC(50)
+        contaPai.transferencia(100)
+        
+
+        console.log(contaPai)
+        console.log(contaFilho)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container-principal">
+        <h1 id="titulo-principal">tititititit</h1>
+    </div>
+
+
+
+
+    <script>
+        let textoInserir = document.createTextNode("algum texto")
+
+        let novoElemento = document.createElement('p')
+        let elementoAlvo = document.querySelector('#titulo-principal')
+        let elementoPai = document.querySelector('#container-principal')
+
+        novoElemento.appendChild(textoInserir)
+
+        elementoPai.insertBefore(novoElemento, elementoAlvo)
+
+
+
+    </script>
+</body>
+</html>

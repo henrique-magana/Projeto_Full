@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        
+
+        class Carro{
+            constructor(marca,cor,gasolina_restante){
+                this.marca = marca
+                this.cor = cor
+                this.gasolina_restante = gasolina_restante
+            }
+
+            dirigirCarro(){
+                this.gasolina_restante -= 15
+                if(this.gasolina_restante < 10){
+                    console.log("Vamos abastecer")
+                    carro.abastecerCarro()
+                }
+            }
+
+            abastecerCarro(){
+                this.gasolina_restante += 50
+                console.log(`Novo saldo gasolina ${this.gasolina_restante}`)
+            }
+            
+        }
+
+        let carro = new Carro("GM",'branca',50)
+        console.log(carro)
+        carro.dirigirCarro()
+        console.log(carro)
+        carro.dirigirCarro()
+        console.log(carro)
+        carro.dirigirCarro()
+        console.log(carro)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Spread - para espalhar os dados
+        // Rest - para juntar os dados
+
+
+
+        //Spread - espalhar
+        //String
+        let tituloArtigo = "Como utilizar o JS"
+        console.log(tituloArtigo)
+        console.log(...tituloArtigo) // fica assim = c o m o   u t i l i...
+
+        //array - mais util
+        let listaCursos = ['Node JS e MongoDB', 'ES6, TypeScript e AnCular 4']
+        let listaCursos2 = ['Multiplataforma Android','IOS foda']
+        let listaCursosCompleto = ['Web completo','Android completo',...listaCursos,...listaCursos2]
+
+
+        console.log(listaCursosCompleto)
+
+        //Objetos - muito util
+
+        let pessoa = {nome:'Joao', idade: 25}
+        let clone = {endereco: 'Rua revfdv', ...pessoa}
+
+        console.log(clone)
+        
+
+    </script>
+</body>
+</html>

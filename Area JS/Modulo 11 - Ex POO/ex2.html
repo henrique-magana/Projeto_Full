@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        class CarrinhoCompras{
+            constructor(nome,qtdTotal,valorTotal){
+                this.nome = nome
+                this.qtdTotal = qtdTotal
+                this.valorTotal = valorTotal
+            }
+
+            criarItens(nome,qtdTotal,valorTotal){
+                this.nome = prompt("Qual o nome do Item ")
+                this.qtdTotal = prompt("Quantos Itens? ")
+                this.valorTotal = prompt("Qual o valor total")
+            }
+
+            remover(i){
+                delete carrinho[i]
+                console.log("Removido")
+            }
+        }
+
+        let carrinho = []
+
+
+        let contador = 1
+
+        while(contador > 0){
+
+            let continuar = prompt("Cadastrar Produto? 1 - Sim | 2 - Lista | 3 - Apagar um Item")
+
+            if(continuar == 1){
+
+                var item1 = new CarrinhoCompras()
+                item1.criarItens()
+                carrinho.push(item1)
+                console.log(carrinho)
+
+            }else if(continuar == 2){
+
+                console.log(carrinho)
+            }else if(continuar == 3){
+                let n1 = prompt("Digite o Item que deseja excluir")
+
+                for(let i = 0; i< carrinho.length; i++){
+                    if(carrinho[i].nome.includes(n1)){
+                        //item1.remover(i)
+
+                        console.log("Achou o item")
+                        item1.remover(i)
+                    }else{
+                        console.log("Nao tem esse item")
+                    }
+                }
+
+
+            }else{
+                contador--
+            }
+
+
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

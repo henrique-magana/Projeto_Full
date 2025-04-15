@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        //function
+
+        let arr = [10,20,30,40]
+
+        //no Array colocamos [] dentro da funcao para desestruturar
+        function teste([a, b]){
+            console.log(a,b)
+        }
+
+        teste(arr)
+
+
+        let obj = {
+            a: 10,
+            b: 20,
+            c: 30,
+            d: 40
+        }
+
+        //no Objeto colocamos {} dentro da funcao para desestruturar
+        function teste1({a,b}){
+            console.log(a,b)
+        }
+
+        teste1(obj)
+
+    </script>
+</body>
+</html>

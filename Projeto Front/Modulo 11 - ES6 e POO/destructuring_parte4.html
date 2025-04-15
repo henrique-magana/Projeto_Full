@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        //usando o destructing com rest
+
+        //array 
+        let arr = [10,20,30,40]
+
+        // extrair todos os elementos em uma unica varivel
+
+        let [...resto] = arr
+
+        console.log(resto)
+
+
+        let obj  ={
+            a:10,
+            b:20,
+            c:30
+        }
+
+        let {...para} = obj
+        console.log(para)
+
+
+
+    </script>
+</body>
+</html>
