@@ -1,9 +1,14 @@
+import MyComponent from "./MyComponent"
+
 const FirstComponent = () =>{
 
+    //comentario
 
     return (
         <div>
-            <h1>Meu primeiro componente</h1>
+            <h1 className="teste">Meu primeiro componente</h1>
+            {/*comentario*/}
+            <MyComponent/>
         </div>
     )
 
